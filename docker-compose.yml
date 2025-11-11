@@ -15,7 +15,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    hostname: ${HOSTNAME}
     image: aleksanderbl/pihole-unbound:latest
     hostname: ${HOSTNAME}
     #domainname: ${DOMAIN_NAME}
