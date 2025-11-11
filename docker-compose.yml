@@ -15,6 +15,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      pull_policy: build
     image: aleksanderbl/pihole-unbound:latest
     hostname: ${HOSTNAME}
     #domainname: ${DOMAIN_NAME}
