@@ -12,6 +12,10 @@ services:
     # dns:
     #   - 127.0.0.1
     container_name: pihole
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: ${HOSTNAME}
     image: aleksanderbl/pihole-unbound:latest
     hostname: ${HOSTNAME}
     #domainname: ${DOMAIN_NAME}
