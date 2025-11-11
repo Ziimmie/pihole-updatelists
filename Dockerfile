@@ -1,4 +1,4 @@
-FROM pihole/pihole:latest
+FROM aleksanderbl/pihole-unbound:latest
 
 COPY install.sh docker.sh pihole-updatelists.* /tmp/pihole-updatelists/
 
