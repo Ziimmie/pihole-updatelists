@@ -35,8 +35,8 @@ services:
       - FTLCONF_dns_upstreams=127.0.0.1#5335
       - FTLCONF_dns_dnssec="true"
       - FTLCONF_dns_listeningMode=single
-      - BLOCKLISTS_URL='https://v.firebog.net/hosts/lists.php?type=tick'
-      - REGEX_BLACKLIST_URL='https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list'
+      - BLOCKLISTS_URL=https://v.firebog.net/hosts/lists.php?type=tick
+      - REGEX_BLACKLIST_URL=https://raw.githubusercontent.com/mmotti/pihole-regex/master/regex.list
     volumes:
       - etc_pihole-unbound:/etc/pihole:rw
       - etc_pihole_dnsmasq-unbound:/etc/dnsmasq.d:rw
